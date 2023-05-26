@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.homepage{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(196, 193, 165)
+}
+.menubar{
+    display: none;
+}
+
+@media only screen and (max-width: 360px) {
+    .homepage{
+        width: 360px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* background-color: #90EE90; */
+        background-color: black;
+        /* background-color: 	#ECFFDC; */
+        /* background-color: #AFE1AF; */
+        /* opacity: 0.7; */
+        position: relative;
+    }
+    .homepage:last-child{
+        margin-bottom: 10px;
+    }
+    .menubar{
+        display: flex;
+        position: fixed;
+        width: 300px;
+        /* border: 2px solid black; */
+        height: 767px;
+        /* background-color: #AFE1AF; */
+        background-color: black;
+        /* color: #333333; */
+        color: green;
+        top: 0;
+        right: -300px;
+        flex-direction: column;
+        gap: 20px;
+        animation: animate .2s linear forwards;
+        /* opacity: 0; */
+        /* z-index: 9999; */
+    }
+    .menubar-top-box{
+        margin-top: 10px;
+        /* border: 2px solid black; */
+        height: 20px;
+        width: 100%;
+        /* max-height: fit-content; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+    }
+    .personal-info{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        /* border: 2px solid black; */
+        gap: 50px;
+    }
+    .img-pp-box{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img-pp-box img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .pp-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      right: -300px; /* off-screen position */
+    }
+    100% {
+      right: 0; /* on-screen position */
+    }
+  }
+
+
+  

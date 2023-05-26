@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.posts-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: white;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.posts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+.pp img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.posts{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.posts-header{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.pp{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.p-menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.post-desc{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    color: grey;
+    /* border: 2px solid black; */
+}
+.posts-mid{
+    width: 100%;
+}
+.posts-mid img{
+    width: 100%;
+    object-fit: cover;
+}
+.posts-bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.posts-bottom span{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+}
+.comments{
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+    margin-top: 10px;
+}
+.comments p{
+    color: grey;
+}
+
+@media only screen and (max-width: 375px) {
+    .posts{
+        width: 340px;
+    }
+    .pp{
+        font-size: 13px;
+    }
+    .p-menu{
+        font-size: 13px;
+    }
+    .post-desc{
+        font-size: 13px;
+    }
+    .posts-mid img{
+        border-radius: 10px;
+    }
+    .posts-bottom span{
+        font-size: 15px;
+        padding: 0px 10px;
+    }
+    .posts-wrapper{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .comments{
+        font-size: 14px;
+    }
+    .pp img{
+        width: 25px;
+        height: 25px;
+    }
+
+  }
