@@ -50,7 +50,7 @@
     text-align: right;
     /* border: 2px solid black; */
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
     .profile{
         display: flex;
         align-items: center;

@@ -13,9 +13,9 @@
     display: none;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
     .homepage{
-        width: 360px;
+        /* width: 360px; */
         align-items: center;
         justify-content: center;
         gap: 10px;

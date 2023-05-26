@@ -44,7 +44,9 @@ const Navbar = ({setShowmenu,showmenu}) => {
       <div className='mid'>
         <Link to='/'><AiFillHome /></Link>
       <AiOutlineAppstore />
+      <Link to='/ques'>
       <span>ask<AiOutlineQuestion /></span>
+      </Link>
       </div>
       <div className='right'>
         <AiOutlineMenuFold onClick={()=>setShowmenu(true)}/>

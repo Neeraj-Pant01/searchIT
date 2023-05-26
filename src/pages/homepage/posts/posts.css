@@ -88,7 +88,7 @@
     color: grey;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     .posts{
         width: 340px;
     }

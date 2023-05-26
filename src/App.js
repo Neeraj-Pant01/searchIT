@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Homepage from "./pages/homepage/Homepage";
 import {Routes, Route} from "react-router-dom"
 import UserProfile from "./pages/profile/UserProfile";
+import Questions from "./components/questions/Questions";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage setShowmenu={setShowmenu} showmenu={showmenu}/>}></Route>
         <Route path="/profile" element={<UserProfile setShowmenu={setShowmenu} showmenu={showmenu}/>} />
+        <Route path="/ques" element={<Questions />} />
       </Routes>
     </div>
   );
